@@ -19,23 +19,23 @@ Paste this into Cursor, Codex, Claude Code, or any agent that can run shell comm
 Windows (PowerShell):
 
 ```powershell
-irm https://raw.githubusercontent.com/ray0807/opc-skills/master/install.ps1 | iex
+irm https://raw.githubusercontent.com/ray0807/opc-skills/main/install.ps1 | iex
 ```
 
 macOS / Linux:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/ray0807/opc-skills/master/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/ray0807/opc-skills/main/install.sh | bash
 ```
 
 This installs for all supported agents. To pick specific ones:
 
 ```powershell
-& ([scriptblock]::Create((irm https://raw.githubusercontent.com/ray0807/opc-skills/master/install.ps1))) -Agent cursor,codex
+& ([scriptblock]::Create((irm https://raw.githubusercontent.com/ray0807/opc-skills/main/install.ps1))) -Agent cursor,codex
 ```
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/ray0807/opc-skills/master/install.sh | bash -s -- --agent cursor,codex
+curl -fsSL https://raw.githubusercontent.com/ray0807/opc-skills/main/install.sh | bash -s -- --agent cursor,codex
 ```
 
 ### For AI agents
@@ -44,8 +44,8 @@ If a user asks you to install these skills, do the following and nothing else:
 
 1. Identify which agent you are and map it to an `--agent` value from the table below (`cursor`, `codex`, `claude`, `gemini`). If unsure, use `all`.
 2. Run the one-line command for the user's OS:
-   - Windows: `& ([scriptblock]::Create((irm https://raw.githubusercontent.com/ray0807/opc-skills/master/install.ps1))) -Agent <agent>`
-   - macOS / Linux: `curl -fsSL https://raw.githubusercontent.com/ray0807/opc-skills/master/install.sh | bash -s -- --agent <agent>`
+   - Windows: `& ([scriptblock]::Create((irm https://raw.githubusercontent.com/ray0807/opc-skills/main/install.ps1))) -Agent <agent>`
+   - macOS / Linux: `curl -fsSL https://raw.githubusercontent.com/ray0807/opc-skills/main/install.sh | bash -s -- --agent <agent>`
 3. Confirm the output lists `Installed 10 skills`, then tell the user to restart the agent (or start a new chat) so the skills load.
 
 ### From a local clone

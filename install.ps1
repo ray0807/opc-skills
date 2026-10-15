@@ -10,8 +10,8 @@
 
 .EXAMPLE
   # Remote, without cloning:
-  irm https://raw.githubusercontent.com/ray0807/opc-skills/master/install.ps1 | iex
-  & ([scriptblock]::Create((irm https://raw.githubusercontent.com/ray0807/opc-skills/master/install.ps1))) -Agent cursor
+  irm https://raw.githubusercontent.com/ray0807/opc-skills/main/install.ps1 | iex
+  & ([scriptblock]::Create((irm https://raw.githubusercontent.com/ray0807/opc-skills/main/install.ps1))) -Agent cursor
 #>
 param(
     [ValidateSet('all', 'claude', 'cursor', 'codex', 'gemini', 'agents')]
@@ -22,7 +22,7 @@ param(
 
 $ErrorActionPreference = 'Stop'
 $Repo = 'ray0807/opc-skills'
-$Branch = 'master'
+$Branch = 'main'
 
 $TempDir = $null
 $SourceDir = if ($PSScriptRoot) { Join-Path $PSScriptRoot 'skills' }

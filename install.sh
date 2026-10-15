@@ -7,11 +7,11 @@
 #   ./install.sh --agent all --uninstall
 #
 # Remote, without cloning:
-#   curl -fsSL https://raw.githubusercontent.com/ray0807/opc-skills/master/install.sh | bash -s -- --agent cursor
+#   curl -fsSL https://raw.githubusercontent.com/ray0807/opc-skills/main/install.sh | bash -s -- --agent cursor
 set -euo pipefail
 
 REPO="ray0807/opc-skills"
-BRANCH="master"
+BRANCH="main"
 AGENTS="all"
 BASE="$HOME"
 UNINSTALL=0
