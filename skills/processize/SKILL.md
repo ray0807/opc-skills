@@ -31,7 +31,7 @@ Connect the idea back to a real community:
 - Where do these people hang out? (Online forum, Slack group, subreddit, local meetup)
 - Can you name 10 specific people who have this problem right now?
 
-If you can't name 10 people, you don't know your community well enough yet. Go back to `/find-community`.
+If you can't name 10 people, you don't know your community well enough yet. Go back to the `find-community` skill.
 
 ## Step 3: Design the Manual Version
 
