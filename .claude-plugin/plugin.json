@@ -1,6 +1,6 @@
 {
   "name": "minimalist-entrepreneur",
-  "description": "Agent skills based on The Minimalist Entrepreneur by Sahil Lavingia. Frameworks for building a profitable, sustainable business starting from community.",
+  "description": "基于 Sahil Lavingia《极简创业者》的 agent skill，从社群出发，打造盈利、可持续的小生意。",
   "version": "1.0.0",
   "author": {
     "name": "Sahil Lavingia"
